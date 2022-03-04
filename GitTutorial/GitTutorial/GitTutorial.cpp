@@ -3,12 +3,14 @@
 #include <cstdlib>
 #include <ctime>
 
-bool Guess(int number)
-{
+bool Guess(int number) {
     return false;
 }
 
-int main()
-{
-
+int main() {
+    int guess;
+    do {
+        std::cin >> guess;
+    } while (!Guess(guess));
+    return 0;
 }
